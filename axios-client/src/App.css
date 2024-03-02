@@ -1,0 +1,161 @@
+/* Navbar.css */
+
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar-title {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 20px;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links li a:hover {
+  text-decoration: underline;
+}
+
+.product-form {
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+.product-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.product-form input,
+.product-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.product-form button {
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  padding: 8px 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.product-form button:hover {
+  background-color: #074a92;
+}
+
+
+
+.product-wrapper {
+  width: 100%;
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  width: 330px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  padding-bottom: 15px;
+}
+
+.product-image {
+  flex: 1;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+}
+
+.product-details {
+  flex: 1;
+  padding: 20px;
+}
+
+.product-details h2 {
+  margin-top: 0;
+}
+
+.product-details .price {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #007bff;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.button-wrapper button {
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.update-btn {
+  background-color: #007bff;
+}
+
+.update-btn:hover {
+  background-color: #074a92;
+}
+
+.delete-btn {
+  background-color: rgb(255, 68, 68);
+}
+
+.delete-btn:hover {
+  background-color: rgb(184, 21, 21);
+}
+
+.err-wrapper {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.err-wrapper h2 {
+  font-size: 80px;
+}
+
+.err-wrapper h3 {
+  font-size: 30px;
+}
