@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import API from "../HTTP";
 import { useNavigate, useParams } from "react-router-dom";
@@ -22,7 +23,6 @@ const UpdateProduct = () => {
 
   const handleSubmitFetch = async (e) => {
     e.preventDefault();
-
     try {
       const res = await fetch(`http://localhost:3000/products/${id}`, {
         method: "PUT",
@@ -46,7 +46,6 @@ const UpdateProduct = () => {
 
   const handleSubmitAxios = async (e) => {
     e.preventDefault();
-
     try {
       const res = await API.put(`/products/${id}`, productData);
       // const res = await API.patch(`/products/${id}`, productData);
@@ -59,7 +58,6 @@ const UpdateProduct = () => {
 
   const fetchProductData = async (id) => {
     const { data } = await API.get(`/products/${id}`);
-
     setProductData({
       id: data.id,
       name: data.name,
@@ -75,7 +73,7 @@ const UpdateProduct = () => {
   }, []);
 
   return (
-    <form className="product-form" onSubmit={handleSubmitFetch}>
+    <form className="product-form" onSubmit={handleSubmitAxios}>
       <label htmlFor="name">Name:</label>
       <input
         type="text"

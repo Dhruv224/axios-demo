@@ -2,7 +2,8 @@ import axios from "axios";
 
 const API = axios.create({
   baseURL: "http://localhost:3000",
-  timeout: 1000,
+  timeout: 2000,
+  // timeout: 1,
 });
 
 // interceptor for instance
@@ -12,7 +13,7 @@ API.interceptors.request.use(
     // request.params={
     //   id : 1
     // }
-    console.log(`request1 type : ${request.method}`);
+    console.log(`request1 type : ${request.method.toUpperCase()}`);
     console.log(request);
     return request;
   },
@@ -23,21 +24,22 @@ API.interceptors.request.use(
   }
 );
 
-API.interceptors.request.use(
-  (request) => {
-    // request.params={
-    //   id : 1
-    // }
-    console.log(`request2 type : ${request.method}`);
-    console.log(request);
-    return request;
-  },
-  (error) => {
-    console.log("request failed...");
-    console.log(error);
-    return Promise.reject(error);
-  }
-);
+// API.interceptors.request.use(
+//   (request) => {
+//     // request.params={
+//     //   id : 1
+//     // }
+//     Object.assign(request,{test : 'testingggggggggggggggggg'})
+//     console.log(`request2 type : ${request.method}`);
+//     console.log(request);
+//     return request;
+//   },
+//   (error) => {
+//     console.log("request failed...");
+//     console.log(error);
+//     return Promise.reject(error);
+//   }
+// );
 
 // response interceptor
 API.interceptors.response.use(
@@ -53,24 +55,28 @@ API.interceptors.response.use(
     if (status === 404) {
       console.log("URL not found..");
     }
-    return Promise.reject(error);
-  }
-);
-API.interceptors.response.use(
-  (response) => {
-    console.log("gettng response2..");
-    console.log(response);
-    return response;
-  },
-  (error) => {
-    console.log("response failed..");
-    console.log(error);
-    const status = error.response ? error.response.status : null;
-    if (status === 404) {
-      console.log("URL not found..");
+    if (error.code === "ECONNABORTED") {
+      console.log("server not responded within time limit...");
     }
     return Promise.reject(error);
   }
 );
+
+// API.interceptors.response.use(
+//   (response) => {
+//     console.log("gettng response2..");
+//     console.log(response);
+//     return response;
+//   },
+//   (error) => {
+//     console.log("response failed..");
+//     console.log(error);
+//     const status = error.response ? error.response.status : null;
+//     if (status === 404) {
+//       console.log("URL not found..");
+//     }
+//     return Promise.reject(error);
+//   }
+// );
 
 export default API;

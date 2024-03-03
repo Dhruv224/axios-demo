@@ -1,33 +1,9 @@
 {
   "products": [
     {
-      "id": "3",
-      "name": "Laptop",
-      "price": 999.99,
-      "description": "Powerful laptop with fast processor and ample storage.",
-      "image": "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
-      "available_quantity": 30
-    },
-    {
-      "id": "4",
-      "name": "Bluetooth Speaker",
-      "price": 79.99,
-      "description": "Portable bluetooth speaker with long battery life.",
-      "image": "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
-      "available_quantity": 80
-    },
-    {
-      "id": "5",
-      "name": "Fitness Tracker",
-      "price": 129.99,
-      "description": "Activity tracker with heart rate monitor and GPS.",
-      "image": "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
-      "available_quantity": 120
-    },
-    {
       "id": "6",
       "name": "Smartwatch",
-      "price": 199.99,
+      "price": "194534",
       "description": "Smartwatch with customizable watch faces and fitness tracking features.",
       "image": "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
       "available_quantity": 60
@@ -87,14 +63,6 @@
       "description": "v",
       "image": "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
       "available_quantity": "500"
-    },
-    {
-      "id": "14",
-      "name": "abcd",
-      "price": "5000",
-      "description": "efwsnfsfvnsodvnsdovsdoi",
-      "image": "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
-      "available_quantity": "1"
     }
   ]
 }
