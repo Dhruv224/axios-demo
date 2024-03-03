@@ -37,7 +37,7 @@ const AllProducts = () => {
 
   const fetchDataWithAxiosInstance = async () => {
     try {
-      const res = await API.get("/product");
+      const res = await API.get("/products");
       // console.log(res.data);
       setProducts(res.data);
     } catch (error) {

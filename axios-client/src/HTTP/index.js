@@ -12,7 +12,23 @@ API.interceptors.request.use(
     // request.params={
     //   id : 1
     // }
-    console.log(`request type : ${request.method}`);
+    console.log(`request1 type : ${request.method}`);
+    console.log(request);
+    return request;
+  },
+  (error) => {
+    console.log("request failed...");
+    console.log(error);
+    return Promise.reject(error);
+  }
+);
+
+API.interceptors.request.use(
+  (request) => {
+    // request.params={
+    //   id : 1
+    // }
+    console.log(`request2 type : ${request.method}`);
     console.log(request);
     return request;
   },
@@ -26,7 +42,23 @@ API.interceptors.request.use(
 // response interceptor
 API.interceptors.response.use(
   (response) => {
-    console.log("gettng response..");
+    console.log("gettng response1..");
+    console.log(response);
+    return response;
+  },
+  (error) => {
+    console.log("response failed..");
+    console.log(error);
+    const status = error.response ? error.response.status : null;
+    if (status === 404) {
+      console.log("URL not found..");
+    }
+    return Promise.reject(error);
+  }
+);
+API.interceptors.response.use(
+  (response) => {
+    console.log("gettng response2..");
     console.log(response);
     return response;
   },
