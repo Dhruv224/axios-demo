@@ -10,10 +10,10 @@ const API = axios.create({
 // request interceptor
 API.interceptors.request.use(
   (request) => {
-    // request.params={
-    //   userName : 'abcd'
-    // }
-    // request.headers['Authorization'] = 'users token here'
+    request.params={
+      userName : 'abcd'
+    }
+    request.headers['Authorization'] = 'users token here'
     console.log(`request1 type : ${request.method.toUpperCase()}`);
     console.log(request);
     return request;
