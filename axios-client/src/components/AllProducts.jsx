@@ -81,7 +81,7 @@ const AllProducts = () => {
     );
     if (deleteOrNot) {
       try {
-        const res = await API.delete(`/prod  ucts/${id}`);
+        const res = await API.delete(`/products/${id}`);
         console.log(res.data);
         fetchDataWithAxiosInstance();
       } catch (error) {
@@ -91,10 +91,10 @@ const AllProducts = () => {
   };
 
   useEffect(() => {
-    //fetch
+    // using fetch
     // fetchDataUsingFetch();
 
-    //without axios.create Instanse
+    // without axios.create Instanse
     // fetchDataWithoutAxiosInstance();
 
     //with axios.create Instance
