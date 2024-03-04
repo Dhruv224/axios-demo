@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import React, { useEffect } from "react";
 
 const Product = ({ product, handleUpdate, handleDelete }) => {

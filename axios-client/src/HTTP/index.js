@@ -11,8 +11,9 @@ const API = axios.create({
 API.interceptors.request.use(
   (request) => {
     // request.params={
-    //   id : 1
+    //   userName : 'abcd'
     // }
+    // request.headers['Authorization'] = 'users token here'
     console.log(`request1 type : ${request.method.toUpperCase()}`);
     console.log(request);
     return request;
@@ -24,12 +25,10 @@ API.interceptors.request.use(
   }
 );
 
+// chaining of interceptor
+
 // API.interceptors.request.use(
 //   (request) => {
-//     // request.params={
-//     //   id : 1
-//     // }
-//     Object.assign(request,{test : 'testingggggggggggggggggg'})
 //     console.log(`request2 type : ${request.method}`);
 //     console.log(request);
 //     return request;
@@ -61,6 +60,8 @@ API.interceptors.response.use(
     return Promise.reject(error);
   }
 );
+
+// chaining of interceptor
 
 // API.interceptors.response.use(
 //   (response) => {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import API from "../HTTP";
 import { useNavigate } from "react-router-dom";
 
@@ -33,7 +33,7 @@ const AddProduct = () => {
         throw new Error("Something went wrong");
       }
       const data = await res.json();
-
+      
       const addedProduct = await fetch("http://localhost:3000/products", {
         method: "POST",
         headers: {
