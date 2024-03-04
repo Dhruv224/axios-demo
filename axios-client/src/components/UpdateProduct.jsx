@@ -10,8 +10,8 @@ const UpdateProduct = () => {
     name: "",
     price: "",
     description: "",
-    image:
-      "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
+    // image:
+    //   "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
     available_quantity: "",
   });
 
@@ -60,14 +60,14 @@ const UpdateProduct = () => {
   const fetchProductData = async (id) => {
     const { data } = await API.get(`/products/${id}`);
 
-    setProductData({
-      id: data.id,
-      name: data.name,
-      price: data.price,
-      description: data.description,
-      image: data.image,
-      available_quantity: data.available_quantity,
-    });
+    setProductData(prev => ({
+      ...prev,
+        id: data.id,
+        name: data.name,
+        price: data.price,
+        description: data.description,
+        available_quantity: data.available_quantity,
+    }));
   };
 
   useEffect(() => {
@@ -75,7 +75,7 @@ const UpdateProduct = () => {
   }, []);
 
   return (
-    <form className="product-form" onSubmit={handleSubmitFetch}>
+    <form className="product-form" onSubmit={handleSubmitAxios}>
       <label htmlFor="name">Name:</label>
       <input
         type="text"
