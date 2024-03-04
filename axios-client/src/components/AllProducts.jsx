@@ -13,6 +13,7 @@ const AllProducts = () => {
     try {
       const res = await fetch("http://localhost:3000/products");
 
+      // Explicitly handling error in Fetch request
       if (!res.ok) {
         throw new Error("Something went wrong");
       }

@@ -48,8 +48,12 @@ const UpdateProduct = () => {
     e.preventDefault();
 
     try {
-      const res = await API.put(`/products/${id}`, productData);
-      // const res = await API.patch(`/products/${id}`, productData);
+      // Put method replaces the prev obj with the obj which we are passing in the payload
+
+      // const res = await API.put(`/products/${id}`, productData);
+
+      // Patch method does the partial updation, it will change the property which are passed in payload obj and the remaining peoperties are copid from previous obj
+      const res = await API.patch(`/products/${id}`, productData);
       console.log(res.data);
       navigate("/");
     } catch (error) {

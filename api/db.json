@@ -1,76 +1,68 @@
 {
   "products": [
     {
-      "id": "1",
-      "name": "Wireless Headphones",
-      "price": 49,
-      "description": "High-quality wireless headphones with noise-cancellation feature.",
-      "image": "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
-      "available_quantity": 100
+        "id": "1",
+        "name": "Wireless Headphones",
+        "price": 49,
+        "description": "High-quality wireless headphones with noise-cancellation feature.",
+        "image": "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
+        "available_quantity": 100
     },
     {
-      "id": "2",
-      "name": "Smartphone",
-      "price": 699,
-      "description": "Latest smartphone with advanced features and high-resolution camera.",
-      "image": "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
-      "available_quantity": 50
+        "id": "2",
+        "name": "Smartphone",
+        "price": 699,
+        "description": "Latest smartphone with advanced features and high-resolution camera.",
+        "image": "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
+        "available_quantity": 50
     },
     {
-      "id": "3",
-      "name": "Laptop",
-      "price": 999,
-      "description": "Powerful laptop with fast processor and ample storage.",
-      "image": "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
-      "available_quantity": 30
+        "id": "3",
+        "name": "Laptop",
+        "price": 999,
+        "description": "Powerful laptop with fast processor and ample storage.",
+        "image": "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
+        "available_quantity": 30
     },
     {
-      "id": "4",
-      "name": "Bluetooth Speaker",
-      "price": 79,
-      "description": "Portable bluetooth speaker with long battery life.",
-      "image": "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
-      "available_quantity": 80
+        "id": "4",
+        "name": "Bluetooth Speaker",
+        "price": 79,
+        "description": "Portable bluetooth speaker with long battery life.",
+        "image": "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
+        "available_quantity": 80
     },
     {
-      "id": "5",
-      "name": "Fitness Tracker",
-      "price": 129,
-      "description": "Activity tracker with heart rate monitor and GPS.",
-      "image": "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
-      "available_quantity": 120
+        "id": "5",
+        "name": "Fitness Tracker",
+        "price": 129,
+        "description": "Activity tracker with heart rate monitor and GPS.",
+        "image": "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
+        "available_quantity": 120
     },
     {
-      "id": "6",
-      "name": "Smartwatch",
-      "price": 199,
-      "description": "Smartwatch with customizable watch faces and fitness tracking features.",
-      "image": "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
-      "available_quantity": 60
+        "id": "6",
+        "name": "Smartwatch",
+        "price": 199,
+        "description": "Smartwatch with customizable watch faces and fitness tracking features.",
+        "image": "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
+        "available_quantity": 60
     },
     {
-      "id": "7",
-      "name": "Gaming Console",
-      "price": 399,
-      "description": "Next-gen gaming console with immersive gaming experience.",
-      "image": "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
-      "available_quantity": 20
+        "id": "7",
+        "name": "Gaming Console",
+        "price": 399,
+        "description": "Next-gen gaming console with immersive gaming experience.",
+        "image": "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
+        "available_quantity": 20
     },
     {
-      "id": "8",
-      "name": "Digital Camera",
-      "price": 299,
-      "description": "High-resolution digital camera with multiple shooting modes.",
-      "image": "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
-      "available_quantity": 40
-    },
-    {
-      "id": "9",
-      "name": "Wireless Mouse",
-      "price": 29,
-      "description": "Ergonomic wireless mouse with precise tracking.",
-      "image": "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
-      "available_quantity": 90
+        "id": "8",
+        "name": "Digital Camera",
+        "price": 299,
+        "description": "High-resolution digital camera with multiple shooting modes.",
+        "image": "https://blog.openreplay.com/images/integrating-axios-with-react-hooks/images/hero.png",
+        "available_quantity": 40
     }
-  ]
+]
 }
