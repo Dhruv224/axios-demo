@@ -1,5 +1,5 @@
 // const data={
-//     name:'mansi',
+//     name:'Mansi',
 //     age:20
 // }
 // 1. transformation of req and res
@@ -20,7 +20,7 @@
 //   header: {
 //     "Content-Type": "application/json",
 //   },
-//   data: { name: "Sabesan", age: 25 },
+//   data: { name: "Mansi", age: 20 },
 // })
 //   .then((response) => console.log(response))
 //   .catch((error) => console.log(error));
@@ -53,6 +53,7 @@
 
 // 4 Response Timeout
 //response timeout refers to the duration of time the library waits for a response from a server before considering the request as failed due to lack of response.
+// When youre use a timeout with Axios, you're specifying the maximum amount of time (in milliseconds) that Axios should wait for the server to send a response. If the timeout period is exceeded, Axios will abort the request and trigger an error.
 
 // const controller = new AbortController();
 // const signal = controller.signal;
@@ -60,8 +61,8 @@
 //     method: "POST",
 //     signal: signal,
 //     body: JSON.stringify({
-//         firstName: "Sabesan",
-//         lastName: "Sathananthan",
+//         firstName: "Mansi",
+//         lastName: "Jayswal",
 //     }),
 // };
 // const promise = fetch("/login", options);
@@ -77,8 +78,8 @@
 //     url: "/login",
 //     timeout: 5000, // 5 seconds timeout
 //     data: {
-//         firstName: "Sabesan",
-//         lastName: "Sathananthan",
+//         firstName: "Mansi",
+//         lastName: "Jayswal",
 //     },
 // })
 //     .then((response) => {
